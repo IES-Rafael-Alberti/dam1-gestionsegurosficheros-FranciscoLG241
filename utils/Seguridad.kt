@@ -1,4 +1,6 @@
 package utils
 
-class Seguridad(){
+import ui.Consola
+
+class Seguridad(ui: Consola) {
 }

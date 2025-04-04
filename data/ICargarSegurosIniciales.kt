@@ -1,7 +1,7 @@
 package data
 
-import model.Seguro
+import utils.FicherosTexto
 
 interface ICargarSegurosIniciales {
-    fun cargarSeguros(mapa: Map<String, (List<String>) -> Seguro>): Boolean
+    fun cargarSeguros(mapa: FicherosTexto): Boolean
 }

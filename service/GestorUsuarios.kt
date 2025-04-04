@@ -3,11 +3,11 @@ package service
 import data.IRepoUsuarios
 import model.Perfil
 import model.Usuario
-import utils.IUtilSeguridad
+import utils.Seguridad
 
 class GestorUsuarios(
     private val repoUsuarios: IRepoUsuarios,
-    private val seguridad: IUtilSeguridad
+    private val seguridad: Seguridad
 ): IServUsuarios{
 
     override fun iniciarSesion(nombre: String, clave: String): Perfil? {

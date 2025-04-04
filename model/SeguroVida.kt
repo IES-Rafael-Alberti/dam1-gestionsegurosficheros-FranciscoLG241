@@ -15,7 +15,7 @@ class SeguroVida private constructor(
 
 
     companion object {
-        private var numPolizasVida = 800000
+        var numPolizasVida = 800000
         private const val PORCENTAJE_INCREMENTO_ANUAL = 0.0005
 
 

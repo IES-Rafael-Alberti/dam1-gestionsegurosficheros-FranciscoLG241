@@ -12,7 +12,7 @@ class SeguroAuto private constructor(
 ) : Seguro(numPoliza, dniTitular, importe) {
 
     companion object {
-        private var numPolizasAuto: Int = 400000
+        var numPolizasAuto: Int = 400000
         private const val PORCENTAJE_INCREMENTO_PARTES = 0.02
 
 

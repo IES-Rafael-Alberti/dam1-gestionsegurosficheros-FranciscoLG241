@@ -2,18 +2,15 @@ package app
 
 import data.ICargarSegurosIniciales
 import data.ICargarUsuariosIniciales
-import model.Seguro
 import ui.IEntradaSalida
-
-
-
+import utils.FicherosTexto
 
 
 class CargadorInicial(
     private val ui: IEntradaSalida,
     private val repoUsuarios: ICargarUsuariosIniciales,
     private val repoSeguros: ICargarSegurosIniciales,
-    private val mapaCrearSeguros: Map<String, (List<String>) -> Seguro>
+    private val mapaCrearSeguros: FicherosTexto
 ) {
 
     fun cargarUsuarios() {

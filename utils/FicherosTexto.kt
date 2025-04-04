@@ -32,16 +32,19 @@ class FicherosTexto(private val ui: IEntradaSalida): IUtilFicheros {
         }
     }
 
-
     override fun <T : IExportable> escribirArchivo(ruta: String, elementos: List<T>): Boolean {
         return try {
-            File(ruta).writeText(elementos.joinToString("\n") { it.serializar() })
+            File(ruta).writeText(elementos.joinToString("\n"))
             true
         } catch (e: Exception) {
-            ui.mostrarError("Error al guardar: ${e.message ?: "Error desconocido"}")
+            ui.mostrarError("Error al escribir archivo: ${e.message}")
             false
         }
     }
+
+
+
+
 
 
 
